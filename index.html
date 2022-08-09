@@ -1,140 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru,en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="html, Lada, Лада, АвтоВАЗ, tags, firstsite">
     <meta name="decription" content="Сайт об автомобилях Lada">
     <link rel="stylesheet" href="styles.css">
-
-
+	<link rel="shortcut icon" href="/image/fav.png" type="image/x-icon">
     <title>Автомобили Lada</title>
 </head>
 <body>
+	<div class="wrapper">
 
-    <div class="header" >
-        <h1>Автомобили Lada</h1>
-    </div>
+		<header class="header" >
+			<video autoplay muted loop preload="auto" class="header__video">
+				<source type="video/h264" src="/videos/videoLada.h264">
+				<source type="video/webm" src="/videos/videoLada.webm">
+			</video>
 
-    <div class="container" >
-       
-            <nav class="sidebar" >
-                <ul>
-                    <li><a href="index.html" class="active" >Главная</a></li>
-                    <li><a href="pageniva.html">Lada Niva</a></li>
-                    <li><a href="pagegranta.html">Lada Granta</a></li>
-                    <li><a href="pagelargus.html">Lada Largus</a></li>
-                    <li><a href="pagevesta.html">Lada Vesta</a></li>
-                    <li><a href="pagexray.html">Lada XRAY</a></li>
-                </ul>
+			<div class="header__head">
+				<div class="header__logo">
+						<a href="/index.html"><img src="/image/lada-logo.png" alt="Логотип" class="logo" ></a>
+				</div>
+				<nav class="header__sidebar" >
+						
+					<a class="header__link" href="/pages/pageNiva/pageniva.html">Lada Niva</a>
+					<a class="header__link" href="/pages/pageGranta/pagegranta.html">Lada Granta</a>
+					<a class="header__link" href="/pages/pageLargus/pagelargus.html">Lada Largus</a>
+					<a class="header__link" href="/pages/pageVesta/pagevesta.html">Lada Vesta</a>
+					<a class="header__link" href="/pages/pageXRAY/pagexray.html">Lada XRAY</a>
+					<div class="header__hamburger">
+						<input id="header__toggle" onchange="fun1()" type="checkbox" />
+						<label class="header__btn" for="header__toggle">
+						  <span></span>
+						</label>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-            </nav>
+		<div class="content" >
+				<div class="content__text" >
+						<h1>Lada «Лада» — марка автомобилей, производимых АО «АвтоВАЗ».</h1> 
+							
+						<p>Ранее название использовалось только для автомобилей, поставлявшихся на экспорт, а для внутреннего рынка 
+							автомобили производились под маркой «Жигули». Следующее же семейство стало называться «Лада Спутник»
+							и поставлялось на экспорт как «Lada Samara», а в 1991 году стало называться так же и внутри страны.
+						</p>
 
-            <div class="content" >
-                <h2>Lada «Лада» — марка автомобилей, производимых АО «АвтоВАЗ».</h2> 
-                    
-                <img src="Lada_Logo.jpeg" alt="Логотип" class="logo" >
-                <p>Ранее название использовалось только для автомобилей, поставлявшихся на экспорт, а для внутреннего рынка 
-                    автомобили производились под маркой «Жигули». Следующее же семейство стало называться «Лада Спутник»
-                    и поставлялось на экспорт как «Lada Samara», а в 1991 году стало называться так же и внутри страны.
-                </p>
+						<p>АО «АвтоВАЗ» — советская и российская автомобилестроительная компания, консолидированная дочерняя компания
+							французской Renault Group с 2016 года. Крупнейший производитель легковых автомобилей в России и Восточной
+							Европе. Завод основан в 1966 году в городе Тольятти, где находятся штаб-квартира и основное производство. 
+							Входит в перечень системообразующих организаций России.
+						</p>
 
-                <p>АО «АвтоВАЗ» — советская и российская автомобилестроительная компания, консолидированная дочерняя компания
-                    французской Renault Group с 2016 года. Крупнейший производитель легковых автомобилей в России и Восточной
-                    Европе. Завод основан в 1966 году в городе Тольятти, где находятся штаб-квартира и основное производство. 
-                    Входит в перечень системообразующих организаций России.
-                </p>
+						<p>Производит автомобили под собственной торговой маркой Lada, а также автомобили марки Nissan, Renault и Datsun.
+							Кроме того, АвтоВАЗ поставляет другим производителям машинокомплекты для выпуска автомобилей марки Lada и их
+							модификаций.
+						</p>
 
-                <p>Производит автомобили под собственной торговой маркой Lada, а также автомобили марки Nissan, Renault и Datsun.
-                    Кроме того, АвтоВАЗ поставляет другим производителям машинокомплекты для выпуска автомобилей марки Lada и их
-                    модификаций.
-                </p>
+						<p>С 2014 года эффективная доля альянса Renault-Nissan в капитале АвтоВАЗа превысила 50 %. После рекапитализации 
+							АвтоВАЗа в 2016 году Renault стала владельцем более 50 % компании, что сделало её дочерней компанией французской
+							корпорации. С начала 2017 года Рено начала консолидировать в отчётности показатели «АвтоВАЗа», и теперь российский
+							рынок стал вторым по величине для Рено, после Франции. Всего французский автоконцерн к концу 2018 года инвестировал
+							в «АвтоВАЗ» примерно 1,9 млрд евро. В январе 2019 года Alliance Rostec Auto B.V. довела свою долю в АвтоВАЗе до 100 %
+							и стала единственным акционером. После этого АвтоВАЗ подал заявку на делистинг акций с Московской биржи.
+						</p>
 
-                <p>С 2014 года эффективная доля альянса Renault-Nissan в капитале АвтоВАЗа превысила 50 %. После рекапитализации 
-                    АвтоВАЗа в 2016 году Renault стала владельцем более 50 % компании, что сделало её дочерней компанией французской
-                    корпорации. С начала 2017 года Рено начала консолидировать в отчётности показатели «АвтоВАЗа», и теперь российский
-                    рынок стал вторым по величине для Рено, после Франции. Всего французский автоконцерн к концу 2018 года инвестировал
-                    в «АвтоВАЗ» примерно 1,9 млрд евро. В январе 2019 года Alliance Rostec Auto B.V. довела свою долю в АвтоВАЗе до 100 %
-                    и стала единственным акционером. После этого АвтоВАЗ подал заявку на делистинг акций с Московской биржи.
-                </p>
+						<p>Полное наименование с июня 2019 года — акционерное общество «АВТОВАЗ», до этого — публичное акционерное общество 
+							«АВТОВАЗ». С января 2021 года компания АвтоВАЗ стала частью бизнес-единицы Renault Dacia-Lada.
+						</p>
 
-                <p>Полное наименование с июня 2019 года — акционерное общество «АВТОВАЗ», до этого — публичное акционерное общество 
-                    «АВТОВАЗ». С января 2021 года компания АвтоВАЗ стала частью бизнес-единицы Renault Dacia-Lada.
-                </p>
+						<h2>Модели, производящиеся в настоящие время под брэндом Lada:</h2>
+				</div>
+				<div class="content__list">
+					<div class="content__items">	
+						<div class="content__item" >
+							<div class="content__item-list">
+								<a href="/pages/pageNiva/pageniva.html">Lada Niva</a>
+								<ul>
+									<li>Niva Travel</li>
+									<li>Niva Legend</li>
+								</ul>
+							</div>
+							<div class="content__item-image" >
+								<img class="content__img" id="open-1" src="/pages/pageNiva/image/nivalegend.jpg" alt="nivalegend">
+							</div>
+			
+						</div>
+						<div class="content__item">
+							<div class="content__item-list">
+								<a href="/pages/pageGranta/pagegranta.html">Lada Granta</a>
+								<ul>
+									<li>Lada Granta седан</li>
+									<li>Lada Granta Drive Active</li>
+									<li>Lada Granta хетчбек</li>
+									<li>Lada Granta лифтбэк</li>
+									<li>Lada Granta универсал SW</li>
+									<li>Lada Granta универсал SW Cross</li>
+								</ul>
+							</div>
+							<div class="content__item-image">
+								<img class="content__img" id="open-2" src="/pages/pageGranta/image/granta1.jpg" alt="granta">
+							</div>
+				
+						</div>
+						<div class="content__item">
+							<div class="content__item-list">
+								<a href="/pages/pageLargus/pagelargus.html">Lada Largus</a>
+								<ul>
+									<li>Lada Largus универсал</li>
+									<li>Lada Largus универсал CNG</li>
+									<li>Lada Largus Cross</li>
+									<li>Lada Largus Cross CNG</li>
+									<li>Lada Largus фургон</li>
+									<li>Lada Largus грузовой фургон CNG</li>
+								</ul>
+							</div>
+							<div class="content__item-image">
+								<img class="content__img" id="open-3" src="pages/pageLargus/image/largus.jpg" alt="largus"> 
+							</div>
+						</div>
+						<div class="content__item">
+							<div class="content__item-list">
+								<a href="/pages/pageVesta/pagevesta.html">Lada Vesta</a>
+								<ul>
+									<li>Lada Vesta седан</li>
+									<li>Lada Vesta Cross</li>
+									<li>Lada Vesta CNG</li>
+									<li>Lada Vesta Sport</li>
+									<li>Lada Vesta SW</li>
+									<li>Lada Vesta SW Cross</li>
+								</ul>
+							</div>
+							<div class="content__item-image">
+									<img class="content__img" id="open-4" src="pages/pageVesta/image/vesta.jpg" alt="vesta">
+							</div>
+							
+						</div>
+						<div class="content__item">
+							<div class="content__item-list">
+								<a href="/pages/pageXRAY/pagexray.html">Lada XRAY</a>
+								<ul>
+									<li>Lada XRAY</li>
+									<li>Lada XRAY Cross</li>
+								</ul>
+							</div>
+							<div class="content__item-image">
+								<img class="content__img" id="open-5" src="pages/pageXRAY/image/xray.jpg" alt="xray">
+							</div>
+						</div>
+					</div>
+				</div>
+		</div> 
 
-                <h3>Модели, производящиеся в настоящие время под брэндом Lada:</h3>
+		<footer class="footer" >
+				<h3>Автомобили Lada</h3>
+		</footer>
 
-                <ul class="auto" >
-                    <li><a href="pageniva.html">Lada Niva</a>
-                        <ul>
-                            <li>Niva Travel</li>
-                            <li>Niva Legend</li>
-                        </ul>
-                    </li>
-                    <li><a href="pagegranta.html">Lada Granta</a>
-                        <ul>
-                            <li>Lada Granta седан</li>
-                            <li>Lada Granta Drive Active</li>
-                            <li>Lada Granta хетчбек</li>
-                            <li>Lada Granta лифтбэк</li>
-                            <li>Lada Granta универсал SW</li>
-                            <li>Lada Granta универсал SW Cross</li>
-                        </ul>
-                    </li>
-                    <li><a href="pagelargus.html">Lada Largus</a>
-                        <ul>
-                            <li>Lada Largus универсал</li>
-                            <li>Lada Largus универсал CNG</li>
-                            <li>Lada Largus Cross</li>
-                            <li>Lada Largus Cross CNG</li>
-                            <li>Lada Largus фургон</li>
-                            <li>Lada Largus грузовой фургон CNG</li>
-                        </ul>
-                    </li>
-                    <li><a href="pagevesta.html">Lada Vesta</a>
-                        <ul>
-                            <li>Lada Vesta седан</li>
-                            <li>Lada Vesta Cross</li>
-                            <li>Lada Vesta CNG</li>
-                            <li>Lada Vesta Sport</li>
-                            <li>Lada Vesta SW</li>
-                            <li>Lada Vesta SW Cross</li>
-                        </ul>
-                    </li>
-                    <li><a href="pagexray.html">Lada XRAY</a>
-                        <ul>
-                            <li>Lada XRAY</li>
-                            <li>Lada XRAY Cross</li>
-                        </ul>
-                    
-                    </li>
-                </ul>
+	</div>
 
-                    <div class="picauto" >
-                        <div class="niva piclist" >
-                            <img src="nivalegend.jpg" alt="nivalegend">
-                        </div>
-                        <div class="granta piclist">
-                            <img src="granta1.jpg" alt="granta">
-                        </div>
-                        <div class="largus piclist">
-                            <img src="largus.jpg" alt="largus"> 
-                        </div>
-                        <div class="vesta piclist">
-                            <img src="vesta.jpg" alt="vesta">
-                        </div>
-                        <div class="xray piclist">
-                            <img src="xray.jpg" alt="xray">
-                        </div>
 
-                    </div> 
 
-                
-            </div>
 
-    </div>
+	<div class="hamburger" id="hamburger">
+		<div class="hamburger__head">
+		</div>
+		<div class="hamburger__box">
+			<a class="hamburger__item" href="/index.html">Главная</a>
+			<a class="hamburger__item" href="/pages/pageNiva/pageniva.html">Lada Niva</a>
+			<a class="hamburger__item" href="/pages/pageGranta/pagegranta.html">Lada Granta</a>
+			<a class="hamburger__item" href="/pages/pageLargus/pagelargus.html">Lada Largus</a>
+			<a class="hamburger__item" href="/pages/pageVesta/pagevesta.html">Lada Vesta</a>
+			<a class="hamburger__item" href="/pages/pageXRAY/pagexray.html">Lada XRAY</a>
+		</div>
+	</div>
 
-    <div class="footer" ><h3>Автомобили Lada</h3></div>
+	
+
+	<div class="modal modal-1" id="modal-1" >
+		<div class="modal__wrapper">
+			<img class="modal__close" id="closeImg1" src="/image/close.png" alt="Закрыть"></img>
+			<div class="modal__content" role="dialog" aria-modal="true">  
+				<div class="modal__header">
+					<h1>Lada Niva</h1>
+				</div>
+				<div class="modal__image">
+					<img src="/pages/pageNiva/image/nivalegend.jpg" class="modal__image-img" alt="nivalegend">
+				</div>
+				<div class="modal__footer">
+					<a class="modal__footer-link1 btn" href="https://www.lada.ru/cars/niva-legend">Перейти на официальный сайт</a>
+					<a class="modal__footer-link2 btn" href="/pages/pageNiva/pageniva.html">Lada Niva</a>
+					<div class="modal__footer-none"></div>
+					<span class="modal__footer-close btn" id="closeDiv1">Закрыть</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-2" id="modal-2" >
+		<div class="modal__wrapper">
+			<img class="modal__close" id="closeImg2" src="/image/close.png" alt="Закрыть"></img>
+			<div class="modal__content" role="dialog" aria-modal="true">  
+				<div class="modal__header">
+					<h1>Lada Granta</h1>
+				</div>
+				<div class="modal__image">
+					<img src="/pages/pageGranta/image/granta1.jpg" alt="granta" class="modal__image-img">
+				</div>
+				<div class="modal__footer">
+					<a class="modal__footer-link1 btn" href="https://www.lada.ru/cars/granta">Перейти на официальный сайт</a>
+					<a class="modal__footer-link2 btn" href="/pages/pageGranta/pagegranta.html">Lada Granta</a>
+					<div class="modal__footer-none"></div>
+					<span class="modal__footer-close btn" id = "closeDiv2">Закрыть</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-3" id="modal-3" >
+		<div class="modal__wrapper">
+			<img class="modal__close" id="closeImg3" src="/image/close.png" alt="Закрыть"></img>
+			<div class="modal__content" role="dialog" aria-modal="true">  
+				<div class="modal__header">
+					<h1>Lada Largus</h1>
+				</div>
+				<div class="modal__image">
+					<img src="pages/pageLargus/image/largus.jpg" alt="largus" class="modal__image-img">
+				</div>
+				<div class="modal__footer">
+					<a class="modal__footer-link1 btn" href="https://www.lada.ru/cars/new-largus">Перейти на официальный сайт</a>
+					<a class="modal__footer-link2 btn" href="/pages/pageLargus/pagelargus.html">Lada Largus</a>
+					<div class="modal__footer-none"></div>
+					<span class="modal__footer-close btn" id="closeDiv3">Закрыть</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-4" id="modal-4" >
+		<div class="modal__wrapper">
+			<img class="modal__close" id="closeImg4" src="/image/close.png" alt="Закрыть"></img>
+			<div class="modal__content" role="dialog" aria-modal="true">  
+				<div class="modal__header">
+					<h1>Lada Vesta</h1>
+				</div>
+				<div class="modal__image">
+					<img src="pages/pageVesta/image/vesta.jpg" alt="vesta" class="modal__image-img">
+				</div>
+				<div class="modal__footer">
+					<a class="modal__footer-link1 btn" href="https://www.lada.ru/cars/vesta">Перейти на официальный сайт</a>
+					<a class="modal__footer-link2 btn" href="/pages/pageVesta/pagevesta.html">Lada Vesta</a>
+					<div class="modal__footer-none"></div>
+					<span class="modal__footer-close btn" id="closeDiv4">Закрыть</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-5" id="modal-5" >
+		<div class="modal__wrapper">
+			<img class="modal__close" id="closeImg5" src="/image/close.png" alt="Закрыть"></img>
+			<div class="modal__content" role="dialog" aria-modal="true">  
+				<div class="modal__header">
+					<h1>Lada XRAY</h1>
+				</div>
+				<div class="modal__image">
+					<img  class="modal__image-img"src="pages/pageXRAY/image/xray.jpg" alt="xray">
+				</div>
+				<div class="modal__footer">
+					<a class="modal__footer-link1 btn" href="https://www.lada.ru/cars/xray">Перейти на официальный сайт</a>
+					<a class="modal__footer-link2 btn" href="/pages/pageXRAY/pagexray.html">Lada XRAY</a>
+					<div class="modal__footer-none"></div>
+					<span class="modal__footer-close btn"id="closeDiv5">Закрыть</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay" id="overlay-modal"></div>
     
 </body>
+<script src="/scriptMenu.js"></script>
+<script src="/scriptModal.js"></script>
+
 </html>
