@@ -1,2 +1,2 @@
-# First-site version 2
-[Ссылка на просмотр](https://94maksim.github.io/myfirstsite/)
+# First-site 
+Version 2.0
